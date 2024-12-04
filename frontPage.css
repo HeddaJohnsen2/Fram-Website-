@@ -1,0 +1,44 @@
+.frontPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column-reverse; */
+  align-items: center;
+}
+/* trenger jeg .frontpage foran */
+.frontPage .frontPageImg {
+  width: 100%;
+  height: auto;
+}
+/* endre høyde på bilde for at det skal bli bedre på responsive */
+
+.frontPage .frontPageContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.frontPage .frontPageTiitle {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 200px;
+  font-weight: 300;
+  /* padding: auto; sjekk om jeg kan ha det på vanlige også*/
+}
+.frontPage .frontpage-vertical-line {
+  width: 1px;
+  height: 150px;
+  background-color: #ffffff;
+}
+
+.frontPage .frontPageText {
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: 300;
+  justify-content: space-around;
+  width: 500px;
+}

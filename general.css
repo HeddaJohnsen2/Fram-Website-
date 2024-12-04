@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen {
+  body {
+    background-color: white;
+  }
+}
+/* add the other font here, and place the font-family frank in the once that uses frank */
+body {
+  font-family: "Arimo", sans-serif;
+}
+.nettside {
+  width: 100vw;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f2de;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  padding: 10px;
+  border-bottom: #0b0a08;
+  border-width: 1px;
+  border-style: solid;
+}
+@media screen {
+  .topnav {
+    height: 50px;
+  }
+}
+.cart {
+  font-size: large;
+  border-radius: 45%;
+  width: 50px;
+  height: auto;
+  padding: 7px;
+  background: #008f51;
+  text-align: center;
+}
+@media screen {
+  .cart {
+    width: 30px;
+  }
+}
+.hamburgerMenu div {
+  width: 20px;
+  height: 2px;
+  background-color: #0b0a08;
+  margin: 5px;
+}
+.topNavTitle {
+  /* font-style: Frank Ruhl Libre; */
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 25px;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menuSide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #028a0f;
+  color: white;
+  z-index: 1000;
+  transform: translateX(-100%);
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.closeButton {
+  font-size: 30px;
+  color: white;
+}
+
+.menuSide ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.menuSide ul li {
+  margin: 15px 0;
+}
+
+.linkMenu {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Show the menu when active */
+.menuSide.show {
+  transform: translateX(0);
+}

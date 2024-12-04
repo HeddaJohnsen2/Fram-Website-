@@ -1,0 +1,47 @@
+.featurePage {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+/* finne ut om det skal være flex eller grid for å få de seksjonene under hverandre */
+
+/* må finnes en lettere måte å gjøre dette på */
+.theFeatureSections {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: #0b0a08;
+  border-width: 1px;
+  border-style: solid;
+}
+.theFeatureSectionsTitle {
+  padding-top: 90px;
+  font-size: 36px;
+  /* få den til å ikke være bold */
+}
+.theFeatureSectionHow {
+  margin-top: 8px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.theFeatureImages {
+  margin-top: 45px;
+  border-radius: 5%;
+  width: 448px;
+  height: 327px;
+}
+.theFeatureDescription {
+  margin-top: 45px;
+}
+.theFeatureButton {
+  margin-top: 45px;
+  margin-bottom: 90px;
+  width: 320px;
+  height: 45px;
+  border-radius: 5%;
+  background-color: #dc4131;
+}

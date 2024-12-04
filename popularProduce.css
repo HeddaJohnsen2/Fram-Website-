@@ -1,0 +1,28 @@
+.page4 {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.produceLayout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 29px;
+  padding-top: 45px;
+  padding-bottom: 90px;
+  /* width: calc(100% - 90px); */
+  justify-content: center;
+}
+.page4Title {
+  padding-top: 45px;
+}
+
+.produce img {
+  width: 100%;
+  height: 432px;
+  border-radius: 5%;
+}
+.addToBasket {
+  width: 120px;
+  height: 30px;
+  background-color: #0b0a08;
+  color: #ffffff;
+}

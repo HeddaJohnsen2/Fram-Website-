@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRAM</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="frontPage.css" />
+    <link rel="stylesheet" href="goToSite.css" />
+    <link rel="stylesheet" href="howItWorksSite.css" />
+    <link rel="stylesheet" href="popularProduce.css" />
+    <link rel="stylesheet" href="signUp.css" />
+
+    <!-- frank ruhl Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Arimo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- liste med hva jeg må gjøre: fjerne sånn at ikke boarder til hver del går over hverandre -->
+  <body>
+    <div class="nettside">
+      <header class="topnav">
+        <div class="hamburgerMenu" id="openHamburgerMenu">
+          <!-- how to add icons the correct way, fontAwsome: https://teams.live.com/l/message/19:meeting_M2IxYjY1YzQtOTZkOS00Y2ZmLThhZTctOGQ4MzM3MjQwNmNj@thread.v2/1730276926634?context=%7B%22contextType%22%3A%22chat%22%7D-->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <!-- skal jeg ha links her -->
+        <div class="topNavTitle">Fram</div>
+        <!-- eller er dette ment å være chat? tror ikke det-->
+        <span class="cart">0</span>
+      </header>
+
+      <!-- Sidebar Menu -->
+      <div class="menuSide" id="menu">
+        <div class="menuHeader">
+          <!-- Close Button, maybe you need a div and onclick -->
+          <div class="closeButton" id="closedMenuButton">&times;</div>
+        </div>
+        <ul>
+          <li><a href="produce.html" class="linkMenu">Products</a></li>
+          <li><a href="chat.html" class="linkMenu">Chat</a></li>
+          <li><a href="#" class="linkMenu">Checkout</a></li>
+        </ul>
+      </div>
+
+      <section class="frontPage">
+        <img
+          class="frontPageImg"
+          src="Exam Project/Images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
+          alt=""
+        />
+        <div class="frontPageContent">
+          <h1 class="frontPageTiitle">Fram</h1>
+          <div class="frontpage-vertical-line"></div>
+          <h2 class="frontPageText">Home delivery from your local farms</h2>
+        </div>
+      </section>
+
+      <!-- skriv det i en div? -->
+      <section class="featurePage">
+        <div class="theFeatureSections">
+          <h2 class="theFeatureSectionsTitle">Shop our seasonal selection</h2>
+          <p class="theFeatureSectionHow">Updated every week</p>
+          <img
+            class="theFeatureImages"
+            src="Exam Project/Images/Landing Page/nina-luong-dp06f70Eyvc-unsplash.jpg"
+            alt=""
+          />
+          <p class="theFeatureDescription">
+            New produce are added continously as time goes by and the seasons
+            changes
+          </p>
+          <!-- sender den videre til produce siden -->
+          <a href="produce.html">
+            <button class="theFeatureButton">Browse our selection</button>
+          </a>
+        </div>
+        <div class="theFeatureSections">
+          <h2 class="theFeatureSectionsTitle">Ask us about anything</h2>
+          <p class="theFeatureSectionHow">All your questions answered</p>
+          <img
+            class="theFeatureImages"
+            src="Exam Project/Images/Landing Page/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
+            alt=""
+          />
+          <p class="theFeatureDescription">
+            New produce are added continously as time goes by and the seasons
+            changes
+          </p>
+          <!-- sender den videre til chat siden -->
+          <a href="chat.html">
+            <button class="theFeatureButton" onclick="chatButton">
+              Go to chat
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="page3">
+        <h2 class="page3Title">This is how it works</h2>
+        <div class="blockContent">
+          <h3>Order groceries</h3>
+          <!-- trengte en til div for å få de under hverandre -->
+          <div>
+            <p>
+              Farm is a circular service that ensures you kitchen is always
+              stocked with the essentials you need. Browse our sesonal
+              selection, choose your items, and place your online order.
+            </p>
+            <a href="produce.html" class="orderGroceriesLink">
+              See our stock here
+            </a>
+          </div>
+          <!-- you have to add link here -->
+        </div>
+        <div class="blockContent">
+          <h3>Stock up</h3>
+          <p>
+            Once you order arrives, unpack the produce and store it however it
+            works best for you. Hold on to the containers- they're yours to keep
+            until your next order.
+          </p>
+        </div>
+        <div class="blockContent">
+          <h3>Scan & reorder</h3>
+          <p>
+            Ready for a refill? Grab the container from your last order and scan
+            the QR code with our app or your phone's camera. This instantly adds
+            the items back to your cart, making reordering a breeze.
+          </p>
+        </div>
+        <div class="blockContent">
+          <h3>Swap and reuse</h3>
+          <p>
+            When we deliver your new order, simply leave your empty containers
+            outside. We'll pick them up, clean them thoroughly, and reuse them
+            for future deliveries
+          </p>
+        </div>
+      </section>
+
+      <section class="page4">
+        <h2 class="page4Title">Popular Produce</h2>
+        <div class="produceLayout">
+          <div class="produce">
+            <img
+              src="Exam Project/Images/Product Page/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
+              alt=""
+            />
+            <h3>Oats</h3>
+            <p>1 kg</p>
+            <p class="price">48 kr / kg</p>
+            <button class="addToBasket" onclick="">Add to basket</button>
+          </div>
+          <div class="produce">
+            <img
+              src="Exam Project/Images/Product Page/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg"
+              alt=""
+            />
+            <h3>Red Onions</h3>
+            <p>0.5 kg</p>
+            <p class="price">48 kr / kg</p>
+            <button class="addToBasket" onclick="">Add to basket</button>
+          </div>
+          <div class="produce">
+            <img
+              src="Exam Project/Images/Product Page/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg"
+              alt=""
+            />
+            <h3>Garlic</h3>
+            <p>0.2 kg</p>
+            <p class="price">48 kr / kg</p>
+            <button class="addToBasket" onclick="">Add to basket</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- here it should be a form element -->
+      <section class="page5">
+        <h2 class="page5title">Fram</h2>
+        <div class="horizontal-line"></div>
+        <h3 class="underTitle">Stay updated</h3>
+        <p class="textPage5">
+          Sign up for our newsletter to be the first to know about new produce
+          or other exciting news!
+        </p>
+
+        <form action="/submit-form" method="post">
+          <label for="firstname">First name</label>
+          <input type="text" id="firstname" name="firstname" required>
+          <label for="email">E-mail Adress</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Send</button>
+        </form>
+        <!-- trenger label her for best assesibility -->
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- use ul and li when creating the toggle menu, at default -->

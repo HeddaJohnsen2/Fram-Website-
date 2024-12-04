@@ -1,0 +1,55 @@
+/* på telefonen skal det ha en annen display, de skal være under hverandre så sikkert fortsatt en grid*/
+.page3 {
+  height: 785px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  background-color: #f7f2de;
+  border: 1px solid #0b0a08;
+}
+/* dette blir sånn du skal lage den forskjellig mellom ulike versjonene, men må bruke min og max skjerm */
+@media (max-width: 600px) {
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+.page3 .page3Title {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 90px;
+}
+.page3 .blockContent {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  border: 1px solid #0b0a08;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 16px;
+}
+.page3 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 90px;
+  width: 278px;
+}
+.page3 .p {
+  width: 100px;
+}
+
+.orderGroceriesLink{
+    text-decoration: underline;
+    color: #0b0a08;
+}

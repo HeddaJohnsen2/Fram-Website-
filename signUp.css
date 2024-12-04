@@ -1,0 +1,39 @@
+.page5 {
+  width: 100%;
+  background-color: #dc4131;
+}
+.page5title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 30px;
+
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 100;
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.horizontal-line {
+  width: 95%;
+  height: 2px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  /* plasser i midten */
+}
+.underTitle {
+  padding-top: 45px;
+  padding-left: 45px;
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+label{
+
+}
+input{
+   width: 100%; 
+}
+button{
+    
+}
