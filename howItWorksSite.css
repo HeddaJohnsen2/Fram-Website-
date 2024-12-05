@@ -6,7 +6,6 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   background-color: #f7f2de;
-
   height: fit-content;
 }
 
@@ -29,10 +28,6 @@
   border-bottom: 1px solid #0b0a08;
   border-left: 1px solid #0b0a08;
   align-items: center;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-
   font-size: 16px;
   gap: 20px;
 }
@@ -42,8 +37,6 @@
   padding-left: 90px;
   font-size: 20px;
   text-transform: uppercase;
-  position: relative;
-  align-items: center;
   grid-column: 1; /* Ensure it's in the first column */
 }
 
