@@ -6,16 +6,8 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   background-color: #f7f2de;
-  border: 1px solid #0b0a08;
+
   height: fit-content;
-}
-/* dette blir sånn du skal lage den forskjellig mellom ulike versjonene, men må bruke min og max skjerm */
-@media (max-width: 600px) {
-  .page3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .page3Title {
@@ -27,51 +19,42 @@
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 1px solid #0b0a08;
 }
-@media (max-width: 600px) {
-  .page3Title {
-    padding: 90px 0 45px;
-  }
-}
+
 .blockContent {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   grid-column: 2;
   height: 197px;
   border-bottom: 1px solid #0b0a08;
   border-left: 1px solid #0b0a08;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+
   font-size: 16px;
-  gap: 16px;
-}
-@media (max-width: 600px) {
-  .blockContent {
-    flex-direction: column;
-    padding: 0;
-    border-top: 1px solid #0b0a08;
-    border-bottom: 0;
-    border-left: 0;
-  }
+  gap: 20px;
 }
 
 .page3 h3 {
+  width: 278px;
+  padding-left: 90px;
   font-size: 20px;
   text-transform: uppercase;
-  width: 278px;
+  position: relative;
   align-items: center;
-}
-@media (max-width: 600px) {
-  .page3 h3 {
-  }
-}
-.page3 p {
+  grid-column: 1; /* Ensure it's in the first column */
 }
 
-@media (max-width: 600px) {
-  .page3 p {
-  }
+.page3 p {
+  grid-column: 2;
+  margin: 0;
+  padding-right: 50px;
+  padding-bottom: 10px;
 }
 .orderGroceries {
+  grid-column: 2;
 }
 
 .orderGroceriesLink {
@@ -80,7 +63,46 @@
 }
 
 @media (max-width: 600px) {
-  .orderGroceriesLink {
-    justify-content: center;
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page3Title {
+    font-size: 24px;
+    padding-top: 90px;
+    padding-bottom: 45px;
+    border-bottom: 0;
+  }
+  .blockContent {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #0b0a08;
+    border-bottom: 0;
+    border-left: 0;
+    height: fit-content;
+    gap: 0;
+  }
+  .page3 h3 {
+    padding-left: 0;
+    font-size: 18px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .page3 p {
+    font-size: 16px;
+  }
+}
+
+/* medium device/tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page3 h3 {
+    font-size: 18px;
+    padding-left: 50px;
+    width: 200px;
+  }
+  .blockContent {
+    height: fit-content;
   }
 }
