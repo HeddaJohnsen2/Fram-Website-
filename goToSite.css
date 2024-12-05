@@ -3,6 +3,12 @@
   justify-content: space-between;
   width: 100vw;
 }
+
+@media (max-width: 600px) {
+    .featurePage{
+        flex-direction: column;
+    }
+ }
 /* finne ut om det skal være flex eller grid for å få de seksjonene under hverandre */
 
 /* må finnes en lettere måte å gjøre dette på */
