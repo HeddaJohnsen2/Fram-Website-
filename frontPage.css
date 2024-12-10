@@ -2,17 +2,23 @@
   position: relative;
   display: flex;
   justify-content: center;
-  /* flex-direction: column-reverse; */
   align-items: center;
+  border-left: solid 1px #0b0a08;
+  border-right: solid 1px #0b0a08;
 }
 /* trenger jeg .frontpage foran */
-.frontPage .frontPageImg {
+.frontPageImg {
   width: 100%;
-  height: auto;
+  height: 85vh;
+}
+@media (max-width: 600px) {
+  .frontPageImg {
+    height: 70vh;
+  }
 }
 /* endre høyde på bilde for at det skal bli bedre på responsive */
 
-.frontPage .frontPageContent {
+.frontPageContent {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -20,25 +26,36 @@
   justify-content: center;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
 }
 
-.frontPage .frontPageTiitle {
+.frontPageTiitle {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 200px;
   font-weight: 300;
+  text-transform: uppercase;
   /* padding: auto; sjekk om jeg kan ha det på vanlige også*/
 }
-.frontPage .frontpage-vertical-line {
+@media (max-width: 600px) {
+  .frontPageTiitle {
+    font-size: 75px;
+  }
+}
+.frontpage-vertical-line {
   width: 1px;
-  height: 150px;
+  height: 200px;
   background-color: #ffffff;
 }
-
-.frontPage .frontPageText {
+.frontPageText {
   padding-top: 30px;
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 100;
   justify-content: space-around;
-  width: 500px;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .frontPageText {
+    font-size: 24px;
+    width: auto;
+    text-transform: lowercase;
+  }
 }

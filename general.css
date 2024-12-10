@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media screen {
+@media (max-width: 600px) {
   body {
     background-color: white;
   }
@@ -28,7 +28,7 @@ body {
   border-width: 1px;
   border-style: solid;
 }
-@media screen {
+@media (max-width: 600px) {
   .topnav {
     height: 50px;
   }
@@ -42,7 +42,7 @@ body {
   background: #008f51;
   text-align: center;
 }
-@media screen {
+@media (max-width: 600px) {
   .cart {
     width: 30px;
   }
