@@ -1,37 +1,68 @@
 .page5 {
   width: 100%;
   background-color: #dc4131;
+  color: #ffffff;
+  overflow: hidden;
 }
 .page5title {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 30px;
-
+  padding: 32px 45px 45px 45px;
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 100;
-  font-size: 45px;
+  font-size: 48px;
   text-transform: uppercase;
-  color: #ffffff;
 }
 .horizontal-line {
-  width: 95%;
-  height: 2px;
-  margin-left: 30px;
+  height: 1px;
+  margin: 0 10px 0 10px;
   background-color: #ffffff;
   /* plasser i midten */
 }
 .underTitle {
-  padding-top: 45px;
-  padding-left: 45px;
-  font-size: 25px;
+  padding: 45px;
+  font-size: 36px;
   font-weight: 100;
   text-transform: uppercase;
-  color: #ffffff;
 }
-/* label {
+.textPage5 {
+  width: 460px;
+  padding: 0 45px 45px 45px;
+  font-size: 24px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
-  width: 100%;
+  width: 460px;
+  margin: 0 45px 12px 45px;
+  height: 45px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
-button {
-} */
+#submitButton {
+  width: 460px;
+  margin: 12px 45px 45px 45px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #e1eaf0;
+}
+
+@media (max-width: 600px) {
+  .underTitle {
+    font-size: 24px;
+  }
+  .textPage5 {
+    width: auto;
+    font-size: 16px;
+  }
+  input {
+    width: auto;
+  }
+  #submitButton {
+    width: auto;
+  }
+}
