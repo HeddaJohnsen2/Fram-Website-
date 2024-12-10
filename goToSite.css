@@ -3,12 +3,12 @@
   justify-content: space-between;
   width: 100vw;
 }
-
+/* på liten skjerm er det egt mellomrom mellom border og sidene av skjermen */
 @media (max-width: 600px) {
-    .featurePage{
-        flex-direction: column;
-    }
- }
+  .featurePage {
+    flex-direction: column;
+  }
+}
 /* finne ut om det skal være flex eller grid for å få de seksjonene under hverandre */
 
 /* må finnes en lettere måte å gjøre dette på */
@@ -19,14 +19,29 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-right: #0b0a08;
-  border-width: 1px;
-  border-style: solid;
+  border: solid 1px #0b0a08 !important;
+}
+#produceSite {
+  border-right: 0px;
+}
+@media (max-width: 600px) {
+  .theFeatureSections {
+    width: 100%;
+  }
+  #produceSite {
+    border-bottom: 0px;
+    border-right: solid 1px #0b0a08;
+  }
 }
 .theFeatureSectionsTitle {
   padding-top: 90px;
   font-size: 36px;
   /* få den til å ikke være bold */
+}
+@media (max-width: 600px) {
+  .theFeatureSectionsTitle {
+    font-size: 24px;
+  }
 }
 .theFeatureSectionHow {
   margin-top: 8px;
@@ -34,20 +49,43 @@
   font-weight: 300;
   font-size: 20px;
 }
+@media (max-width: 600px) {
+  .theFeatureSectionHow {
+    font-size: 18px;
+  }
+}
 .theFeatureImages {
   margin-top: 45px;
-  border-radius: 5%;
-  width: 448px;
+  border-radius: 15px;
+  width: 65%;
   height: 327px;
 }
-.theFeatureDescription {
-  margin-top: 45px;
+@media (max-width: 600px) {
+  .theFeatureImages {
+    height: 250px;
+    width: 85%;
+    /* dette var bedre for om du endret størrelsen på skjermen */
+  }
 }
+.theFeatureDescription {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+  margin: 45px;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .theFeatureDescription {
+    font-size: 18px;
+    /* dette var bedre for om du endret størrelsen på skjermen */
+  }
+}
+
 .theFeatureButton {
-  margin-top: 45px;
   margin-bottom: 90px;
   width: 320px;
   height: 45px;
-  border-radius: 5%;
+  border: 0;
+  border-radius: 10px;
   background-color: #dc4131;
+  color: #ffffff;
 }
