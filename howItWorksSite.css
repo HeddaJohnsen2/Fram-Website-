@@ -65,14 +65,15 @@
     font-size: 24px;
     padding-top: 90px;
     padding-bottom: 45px;
-    border-bottom: 0;
+    border-bottom: 1px solid #0b0a08;
+    width: 100%;
   }
   .blockContent {
     padding: 45px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #0b0a08;
-    border-bottom: 0;
+    border-bottom: 1px solid #0b0a08;
+    border-top: 0;
     border-left: 0;
     height: fit-content;
     gap: 0;
