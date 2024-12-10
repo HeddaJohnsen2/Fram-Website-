@@ -24,15 +24,9 @@ body {
   width: 100%;
   height: 68px;
   padding: 10px;
-  border-bottom: #0b0a08;
-  border-width: 1px;
-  border-style: solid;
+  border-bottom: 1px solid #0b0a08;
 }
-@media (max-width: 600px) {
-  .topnav {
-    height: 50px;
-  }
-}
+
 .cart {
   font-size: large;
   border-radius: 45%;
@@ -61,48 +55,69 @@ body {
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1000;
 }
 
 .menuSide {
-  position: fixed;
+  /* setter menyen til å ikke følge etter når jeg skroller, med position:fixed kunne jeg fått den til å følge med */
+  position: absolute;
+  z-index: 20;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 25vw;
   height: 100%;
-  background-color: #028a0f;
-  color: white;
-  z-index: 1000;
+  overflow-y: auto;
+  background-color: #008f51;
   transform: translateX(-100%);
-}
-
-.menuHeader {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .menuSide {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* Show the menu when active */
+.menuSide.show {
+  transform: translateX(0);
+}
+.menuHeader {
+  height: 68px;
+  display: flex;
+  justify-content: flex-start;
   padding: 10px;
+  border-bottom: 1px solid #0b0a08;
 }
 
 .closeButton {
   font-size: 30px;
-  color: white;
+  /* how to make this work */
+  font-weight: lighter;
 }
 
 .menuSide ul {
+  height: 100%;
+  justify-items: center;
   list-style: none;
-  padding: 20px;
-  margin: 0;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menuSide ul li {
-  margin: 15px 0;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
+.menuSide .checkout {
+  margin-top: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
 .linkMenu {
   text-decoration: none;
-  color: white;
+  color: #0b0a08;
   font-size: 18px;
-}
-
-/* Show the menu when active */
-.menuSide.show {
-  transform: translateX(0);
 }
