@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  background-color: #ffffff;
 }
 /* på liten skjerm er det egt mellomrom mellom border og sidene av skjermen */
 @media (max-width: 600px) {

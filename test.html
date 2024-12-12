@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FRAM</title>
+    <title>Fram</title>
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="frontPage.css" />
     <link rel="stylesheet" href="goToSite.css" />
@@ -34,7 +34,7 @@
   </head>
   <!-- liste med hva jeg må gjøre: fjerne sånn at ikke boarder til hver del går over hverandre -->
   <body>
-    <div class="nettside">
+    <div class="website">
       <header class="topnav">
         <div class="hamburgerMenu" id="openHamburgerMenu">
           <!-- how to add icons the correct way, fontAwsome-->
@@ -160,8 +160,8 @@
         </div>
       </section>
 
-      <section class="page4">
-        <h2 class="page4Title">Popular Produce</h2>
+      <section class="sectionProduce">
+        <h2 class="produceTitle">Popular Produce</h2>
         <div class="produceLayout">
           <div class="produce">
             <div class="produceContainer">
@@ -215,35 +215,34 @@
       </section>
 
       <!-- here it should be a form element -->
-      <section class="page5">
-        <h2 class="page5title">Fram</h2>
-        <div class="horizontal-line"></div>
-        <h3 class="underTitle">Stay updated</h3>
-        <p class="textPage5">
-          Sign up for our newsletter to be the first to know about new produce
-          or other exciting news!
-        </p>
-
-        <form action="/submit-form" method="post">
-          <input
-            type="text"
-            id="firstname"
-            name="firstname"
-            placeholder="First Name"
-            required
-          />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Adress"
-            required
-          />
-          <button id="submitButton" type="submit">Send</button>
-        </form>
-        <!-- trenger label her for best assesibility -->
-      </section>
     </div>
+    <footer class="page5">
+      <h2 class="page5title">Fram</h2>
+      <div class="horizontal-line"></div>
+      <h3 class="underTitle">Stay updated</h3>
+      <p class="textPage5">
+        Sign up for our newsletter to be the first to know about new produce or
+        other exciting news!
+      </p>
+
+      <form action="/submit-form" method="post">
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Adress"
+          required
+        />
+        <button id="submitButton" type="submit">Send</button>
+      </form>
+    </footer>
 
     <script src="script.js"></script>
   </body>

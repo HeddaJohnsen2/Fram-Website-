@@ -2,24 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@media (max-width: 600px) {
-  body {
-    background-color: white;
-  }
-}
-/* add the other font here, and place the font-family frank in the once that uses frank */
-body {
   font-family: "Arimo", sans-serif;
 }
-.nettside {
-  width: 100vw;
-}
 
+.website {
+  width: 100vw;
+  height: auto;
+  background-color: #f7f2de;
+}
 .topnav {
   display: flex;
   justify-content: space-between;
-  background-color: #f7f2de;
   align-items: center;
   width: 100%;
   height: 68px;

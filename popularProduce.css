@@ -1,8 +1,22 @@
-.page4 {
+.sectionProduce {
   /* trenger at man kan kunne se overskriften uansett så da må de være over h */
   display: flex;
   flex-wrap: wrap;
   padding: 45px;
+  background-color: #ffffff;
+}
+.introToProduce {
+  padding: 45px;
+}
+.produceTitle {
+  font-size: 24px;
+  padding-top: 45px;
+  text-transform: uppercase;
+}
+.producePageDescripton {
+  padding-top: 30px;
+  font-size: 20px;
+  max-width: 591px;
 }
 .produceLayout {
   display: grid;
@@ -12,6 +26,10 @@
   padding-bottom: 90px;
   justify-content: center;
 }
+.producePageLayout .produceLayout {
+  grid-template-rows: repeat(2, auto);
+}
+
 .produceContainer {
   position: relative;
   width: auto;
@@ -22,6 +40,8 @@
 }
 
 .produce img {
+  /* jeg vil ha width til å være 100% fordi hvis jeg setter width til å være det som er ønsket så tar det for mye plass,
+   og hvis jeg setter det til max-width i stedet så noen kun den bredden bildet har i forhold til høyden som er satt */
   width: 100%;
   height: 432px;
   border-radius: 5%;
@@ -29,8 +49,8 @@
 }
 .addToBasket {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   width: 130px;
   height: 30px;
   background-color: #0b0a08;
@@ -40,10 +60,6 @@
 }
 .addToBasket i {
   margin-left: 5px;
-}
-.page4Title {
-  padding-top: 45px;
-  text-transform: uppercase;
 }
 
 .produceDiscription {
@@ -74,8 +90,25 @@
   font-size: 18px;
 }
 
+.mapSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 686px;
+  border: 1px solid #0b0a08;
+  justify-items: center;
+  align-content: center;
+}
+.mapSectionText {
+  border: 1px solid #0b0a08;
+  width: 100%;
+}
+.mapTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
-  .page4 {
+  .sectionProduce {
     margin-left: 0;
     margin-right: 0;
     width: 100vw;
@@ -87,10 +120,15 @@
   }
   /* man skal kunne se at man kan scrolle, derfor må den ene syntes litt */
   .produceLayout {
-    grid-template-columns: repeat(3, 70vw);
     display: grid;
+    grid-template-columns: repeat(3, 70vw);
+  }
+  .producePageLayout .produceLayout {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .produce img {
+    height: 279px;
     width: 100%;
     border-radius: 5%;
   }
@@ -102,5 +140,10 @@
   }
   .produceDiscription .kg {
     font-size: 16px;
+  }
+
+  .mapSection {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
