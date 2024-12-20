@@ -95,18 +95,40 @@
   grid-template-columns: repeat(2, 1fr);
   height: 686px;
   border: 1px solid #0b0a08;
-  justify-items: center;
-  align-content: center;
+  justify-items: stretch;
+  align-content: stretch;
 }
 .mapSectionText {
   border: 1px solid #0b0a08;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .mapTitle {
+  margin: 0;
   font-size: 24px;
   text-transform: uppercase;
 }
-
+#hereIsMap{
+  position: relative;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  border: 1px solid red; 
+}
+#customInfoWindow {
+  display:none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1000;
+}
 @media (max-width: 600px) {
   .sectionProduce {
     margin-left: 0;
@@ -145,5 +167,21 @@
   .mapSection {
     display: grid;
     grid-template-columns: 1fr;
+    height: fit-content;
+    border: none;
+  }
+  .mapSectionText {
+    padding: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+  }
+
+  #map {
+    width: auto;
+    height: 450px;
+    margin: 45px 25px 45px 25px;
+    border-radius: 5%;
   }
 }

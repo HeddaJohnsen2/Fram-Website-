@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fram</title>
+    <!-- here i need to add my key -->
+
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="frontPage.css" />
     <link rel="stylesheet" href="goToSite.css" />
@@ -160,8 +162,13 @@
         <div class="mapSectionText">
           <h3 class="mapTitle">See our partnering farms</h3>
         </div>
-        <div class="map">
-          <p>here i am integrading the map</p>
+        <div id="hereIsMap">
+          <div id="customInfoWindow">
+            <p id="placeName"></p>
+            <p id="placeAddress"></p>
+            <p id="placeRating"></p>
+          </div>
+          <div id="map"></div>
         </div>
       </section>
     </div>
@@ -175,6 +182,7 @@
         other exciting news!
       </p>
 
+      <!-- api for å sende mail  -->
       <form action="/submit-form" method="post">
         <input
           type="text"
@@ -195,5 +203,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1SJUfqi_5J5Yfjy6h2bsy2z9l4o-12oY&map_ids=bd032923a2ee812f&callback=initMap&libraries=places,marker"
+      defer
+      async
+    ></script>
   </body>
 </html>
