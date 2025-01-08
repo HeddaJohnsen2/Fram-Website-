@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  },
+  "name": "ai-integrated-web-programming",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeddaJohnsen2/Fram-Website-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeddaJohnsen2/Fram-Website-/issues"
+  },
+  "homepage": "https://github.com/HeddaJohnsen2/Fram-Website-#readme",
+  "description": ""
+}

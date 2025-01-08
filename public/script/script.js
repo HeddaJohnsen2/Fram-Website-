@@ -74,12 +74,21 @@ async function initMap() {
     }
   );
 
+  const form = document.getElementById("contact_form");
+  console.log(form);
+  form.addEventListener("submit", (e) => {
+    console.log("Form submitted");
+    e.preventDefault();
+    console.log("halo");
+    const name = document.getElementById("firstname");
+    const email = document.getElementById("email");
+    console.log("Thank you" + name.value, email.value);
+  });
+
   // burde jeg ha en .then .catch
 
   //finne ut hvordan man henter flere gårder i nærheten og endre info såpass kanskje det står på nettet
-  //finne ut om man skal ha rating i stjerner 
-
-
+  //finne ut om man skal ha rating i stjerner
 
   //   const infoWindowOptions = {
   //     content: "hei",

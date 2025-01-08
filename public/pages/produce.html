@@ -6,12 +6,12 @@
     <title>Fram</title>
     <!-- here i need to add my key -->
 
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="frontPage.css" />
-    <link rel="stylesheet" href="goToSite.css" />
-    <link rel="stylesheet" href="howItWorksSite.css" />
-    <link rel="stylesheet" href="popularProduce.css" />
-    <link rel="stylesheet" href="signUp.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/goToSite.css" />
+    <link rel="stylesheet" href="../styles/howItWorksSite.css" />
+    <link rel="stylesheet" href="../styles/popularProduce.css" />
+    <link rel="stylesheet" href="../styles/signUp.css" />
 
     <!-- frank ruhl Libre -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,8 +55,8 @@
           </div>
         </div>
         <ul>
-          <li><a href="produce.html" class="linkMenu">Products</a></li>
-          <li><a href="chat.html" class="linkMenu">Chat</a></li>
+          <li><a href="/produce" class="linkMenu">Products</a></li>
+          <li><a href="/chat" class="linkMenu">Chat</a></li>
           <li class="checkout"><a href="#" class="linkMenu">Checkout</a></li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
             <div class="produce">
               <div class="produceContainer">
                 <img
-                  src="Exam Project/Images/Product Page/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
+                  src="../Images/Product Page/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
                   alt=""
                 />
                 <button class="addToBasket" onclick="">
@@ -93,7 +93,7 @@
             <div class="produce">
               <div class="produceContainer">
                 <img
-                  src="Exam Project/Images/Product Page/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg"
+                  src="../Images/Product Page/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg"
                   alt=""
                 />
                 <button class="addToBasket" onclick="">
@@ -112,7 +112,7 @@
                   Add to basket <i class="fa fa-arrow-up"></i>
                 </button>
                 <img
-                  src="Exam Project/Images/Product Page/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg"
+                  src="../Images/Product Page/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg"
                   alt=""
                 />
               </div>
@@ -128,7 +128,7 @@
                   Add to basket <i class="fa fa-arrow-up"></i>
                 </button>
                 <img
-                  src="Exam Project/Images/Product Page/rodrigo-dos-reis-h3AkzboxK4Q-unsplash.jpg"
+                  src="../Images/Product Page/rodrigo-dos-reis-h3AkzboxK4Q-unsplash.jpg"
                   alt=""
                 />
               </div>
@@ -141,7 +141,7 @@
             <div class="produce">
               <div class="produceContainer">
                 <img
-                  src="Exam Project/Images/Product Page/goh-rhy-yan-wUBhu3GXIg0-unsplash.jpg"
+                  src="../Images/Product Page/goh-rhy-yan-wUBhu3GXIg0-unsplash.jpg"
                   alt=""
                 />
                 <button class="addToBasket" onclick="">
@@ -183,7 +183,7 @@
       </p>
 
       <!-- api for å sende mail  -->
-      <form action="/submit-form" method="post">
+      <form action="" id="contact_form">
         <input
           type="text"
           id="firstname"
@@ -202,9 +202,9 @@
       </form>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script/script.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1SJUfqi_5J5Yfjy6h2bsy2z9l4o-12oY&map_ids=bd032923a2ee812f&callback=initMap&libraries=places,marker"
+      src="https://maps.googleapis.com/maps/api/js?key=MYKEY&map_ids=bd032923a2ee812f&callback=initMap&libraries=places,marker"
       defer
       async
     ></script>

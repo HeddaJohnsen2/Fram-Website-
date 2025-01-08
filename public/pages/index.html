@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fram</title>
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="frontPage.css" />
-    <link rel="stylesheet" href="goToSite.css" />
-    <link rel="stylesheet" href="howItWorksSite.css" />
-    <link rel="stylesheet" href="popularProduce.css" />
-    <link rel="stylesheet" href="signUp.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/frontPage.css" />
+    <link rel="stylesheet" href="../styles/goToSite.css" />
+    <link rel="stylesheet" href="../styles/howItWorksSite.css" />
+    <link rel="stylesheet" href="../styles/popularProduce.css" />
+    <link rel="stylesheet" href="../styles/signUp.css" />
 
     <!-- frank ruhl Libre -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,8 +54,8 @@
           </div>
         </div>
         <ul>
-          <li><a href="produce.html" class="linkMenu">Products</a></li>
-          <li><a href="chat.html" class="linkMenu">Chat</a></li>
+          <li><a href="/produce" class="linkMenu">Products</a></li>
+          <li><a href="/chat" class="linkMenu">Chat</a></li>
           <li class="checkout"><a href="#" class="linkMenu">Checkout</a></li>
         </ul>
       </div>
@@ -63,7 +63,7 @@
       <section class="frontPage">
         <img
           class="frontPageImg"
-          src="Exam Project/Images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
+          src="../Images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
           alt=""
         />
         <div class="frontPageContent">
@@ -84,7 +84,7 @@
           <p class="theFeatureSectionHow">Updated every week</p>
           <img
             class="theFeatureImages"
-            src="Exam Project/Images/Landing Page/nina-luong-dp06f70Eyvc-unsplash.jpg"
+            src="../Images/Landing Page/nina-luong-dp06f70Eyvc-unsplash.jpg"
             alt=""
           />
           <p class="theFeatureDescription">
@@ -92,7 +92,7 @@
             changes
           </p>
           <!-- sender den videre til produce siden -->
-          <a href="produce.html">
+          <a href="/produce">
             <button class="theFeatureButton">Browse our selection</button>
           </a>
         </section>
@@ -101,7 +101,7 @@
           <p class="theFeatureSectionHow">All your questions answered</p>
           <img
             class="theFeatureImages"
-            src="Exam Project/Images/Landing Page/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
+            src="../Images/Landing Page/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
             alt=""
           />
           <p class="theFeatureDescription">
@@ -109,7 +109,7 @@
             changes
           </p>
           <!-- sender den videre til chat siden -->
-          <a href="chat.html">
+          <a href="/chat">
             <!-- Event Handling : Add event listeners to respond to user actions on your site. -->
 
             <button class="theFeatureButton" onclick="chatButton">
@@ -168,7 +168,7 @@
           <div class="produce">
             <div class="produceContainer">
               <img
-                src="Exam Project/Images/Product Page/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
+                src="../Images/Product Page/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
                 alt=""
               />
               <button class="addToBasket" onclick="">
@@ -184,7 +184,7 @@
           <div class="produce">
             <div class="produceContainer">
               <img
-                src="Exam Project/Images/Product Page/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg"
+                src="../Images/Product Page/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg"
                 alt=""
               />
               <button class="addToBasket" onclick="">
@@ -203,7 +203,7 @@
                 Add to basket <i class="fa fa-arrow-up"></i>
               </button>
               <img
-                src="Exam Project/Images/Product Page/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg"
+                src="../Images/Product Page/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg"
                 alt=""
               />
             </div>
@@ -227,7 +227,7 @@
         other exciting news!
       </p>
 
-      <form action="/submit-form" method="post">
+      <form action="" id="contact_form">
         <input
           type="text"
           id="firstname"
@@ -245,8 +245,8 @@
         <button id="submitButton" type="submit">Send</button>
       </form>
     </footer>
-
-    <script src="script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/7b6b7aa108.js" crossorigin="anonymous"></script> -->
+    <script src="../script/script.js"></script>
   </body>
 </html>
 
