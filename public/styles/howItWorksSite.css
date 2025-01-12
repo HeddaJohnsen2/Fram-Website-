@@ -1,5 +1,5 @@
 /* på telefonen skal det ha en annen display, de skal være under hverandre så sikkert fortsatt en grid*/
-.page3 {
+.thisIsHowItWorks {
   height: 785px;
   width: 100%;
   display: grid;
@@ -9,7 +9,7 @@
   height: fit-content;
 }
 
-.page3Title {
+.howItWorksTitle {
   display: flex;
   grid-column: 1;
   grid-row: 1 / span 4;
@@ -32,7 +32,7 @@
   gap: 20px;
 }
 
-.page3 h3 {
+.thisIsHowItWorks h3 {
   width: 278px;
   padding-left: 90px;
   font-size: 20px;
@@ -40,7 +40,7 @@
   grid-column: 1; /* Ensure it's in the first column */
 }
 
-.page3 p {
+.thisIsHowItWorks p {
   grid-column: 2;
   margin: 0;
   padding-right: 50px;
@@ -56,12 +56,12 @@
 }
 
 @media (max-width: 600px) {
-  .page3 {
+  .thisIsHowItWorks {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .page3Title {
+  .howItWorksTitle {
     font-size: 24px;
     padding-top: 90px;
     padding-bottom: 45px;
@@ -78,20 +78,20 @@
     height: fit-content;
     gap: 0;
   }
-  .page3 h3 {
+  .thisIsHowItWorks h3 {
     padding-left: 0;
     font-size: 18px;
     padding-bottom: 24px;
     text-align: center;
   }
-  .page3 p {
+  .thisIsHowItWorks p {
     font-size: 16px;
   }
 }
 
-/* medium device/tablet */
+/* If you want to use it on a tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .page3 h3 {
+  .thisIsHowItWorks h3 {
     font-size: 18px;
     padding-left: 50px;
     width: 200px;

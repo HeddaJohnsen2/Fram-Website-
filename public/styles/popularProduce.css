@@ -1,4 +1,4 @@
-.sectionProduce {
+.produceSection {
   /* trenger at man kan kunne se overskriften uansett så da må de være over h */
   display: flex;
   flex-wrap: wrap;
@@ -35,11 +35,11 @@
   width: auto;
 }
 
-.produce {
+.produceSelection {
   position: relative;
 }
 
-.produce img {
+.produceSelection img {
   /* jeg vil ha width til å være 100% fordi hvis jeg setter width til å være det som er ønsket så tar det for mye plass,
    og hvis jeg setter det til max-width i stedet så noen kun den bredden bildet har i forhold til høyden som er satt */
   width: 100%;
@@ -57,7 +57,12 @@
   color: #ffffff;
   border-radius: 25px;
   text-align: center;
+  cursor: pointer;
 }
+.addToBasket:hover {
+  opacity: 80%;
+}
+
 .addToBasket i {
   margin-left: 5px;
 }
@@ -112,25 +117,26 @@
   font-size: 24px;
   text-transform: uppercase;
 }
-#hereIsMap{
+#hereIsMap {
   position: relative;
 }
 #map {
   height: 100%;
   width: 100%;
-  border: 1px solid red; 
+  border: 1px solid red;
 }
 #customInfoWindow {
-  display:none;
+  display: none;
   position: absolute;
   top: 10px;
   left: 10px;
   background-color: white;
   border: 1px solid black;
   z-index: 1000;
+  padding: 5px;
 }
 @media (max-width: 600px) {
-  .sectionProduce {
+  .produceSection {
     margin-left: 0;
     margin-right: 0;
     width: 100vw;
@@ -149,7 +155,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .produce img {
+  .produceSelection img {
     height: 279px;
     width: 100%;
     border-radius: 5%;

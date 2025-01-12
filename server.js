@@ -1,6 +1,9 @@
+// to make it easier to start up the website i wanted to use a server with express.js
+//source: https://javascript.plainenglish.io/deploying-a-localhost-server-with-node-js-and-express-js-58775f098407
+//https://expressjs.com/en/starter/static-files.html
+
 const express = require("express");
 const path = require("path");
-
 const app = express();
 const PORT = 8080;
 

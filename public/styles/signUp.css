@@ -1,10 +1,10 @@
-.page5 {
+.formSection {
   width: 100%;
   background-color: #dc4131;
   color: #ffffff;
   overflow: hidden;
 }
-.page5title {
+.formSectionTitle {
   padding: 32px 45px 45px 45px;
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 100;
@@ -17,13 +17,13 @@
   background-color: #ffffff;
   /* plasser i midten */
 }
-.underTitle {
+.formSectionUnderTitle {
   padding: 45px;
   font-size: 36px;
   font-weight: 100;
   text-transform: uppercase;
 }
-.textPage5 {
+.formSectionText {
   width: 460px;
   padding: 0 45px 45px 45px;
   font-size: 24px;
@@ -52,10 +52,10 @@ input {
 }
 
 @media (max-width: 600px) {
-  .underTitle {
+  .formSectionUnderTitle {
     font-size: 24px;
   }
-  .textPage5 {
+  .formSectionText {
     width: auto;
     font-size: 16px;
   }

@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 68px;
   padding: 10px;
   border-bottom: 1px solid #0b0a08;
@@ -29,17 +29,19 @@
   background: #008f51;
   text-align: center;
 }
-@media (max-width: 600px) {
-  .cart {
-    width: 30px;
-  }
-}
 .hamburgerMenu div {
   width: 20px;
   height: 2px;
   background-color: #0b0a08;
   margin: 5px;
 }
+.hamburgerMenu i:hover {
+  opacity: 40%;
+}
+.menuCloseButton i:hover {
+  opacity: 40%;
+}
+
 .topNavTitle {
   /* font-style: Frank Ruhl Libre; */
   font-family: "Frank Ruhl Libre", serif;
@@ -51,7 +53,7 @@
   z-index: 1000;
 }
 
-.menuSide {
+.sidebarMenu {
   /* setter menyen til å ikke følge etter når jeg skroller, med position:fixed kunne jeg fått den til å følge med */
   position: absolute;
   z-index: 20;
@@ -65,17 +67,12 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 600px) {
-  .menuSide {
-    height: 100%;
-    width: 100%;
-  }
-}
+
 /* Show the menu when active */
-.menuSide.show {
+.sidebarMenu.show {
   transform: translateX(0);
 }
-.menuHeader {
+.menuTopBar {
   height: 68px;
   display: flex;
   justify-content: flex-start;
@@ -83,13 +80,13 @@
   border-bottom: 1px solid #0b0a08;
 }
 
-.closeButton {
+.menuCloseButton {
   font-size: 30px;
   /* how to make this work */
   font-weight: lighter;
 }
 
-.menuSide ul {
+.sidebarMenu ul {
   height: 100%;
   justify-items: center;
   list-style: none;
@@ -99,18 +96,31 @@
   align-items: center;
 }
 
-.menuSide ul li {
+.sidebarMenu ul li {
   text-transform: uppercase;
   padding-top: 10px;
 }
 
-.menuSide .checkout {
+.sidebarMenu .checkout {
   margin-top: auto;
   margin-bottom: 50px;
   text-align: center;
 }
-.linkMenu {
+.menuLink {
   text-decoration: none;
   color: #0b0a08;
   font-size: 18px;
+}
+.menuLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .cart {
+    width: 30px;
+  }
+  .sidebarMenu {
+    height: 100%;
+    width: 100%;
+  }
 }

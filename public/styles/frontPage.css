@@ -11,12 +11,6 @@
   width: 100%;
   height: 85vh;
 }
-@media (max-width: 600px) {
-  .frontPageImg {
-    height: 70vh;
-  }
-}
-/* endre høyde på bilde for at det skal bli bedre på responsive */
 
 .frontPageContent {
   position: absolute;
@@ -28,17 +22,11 @@
   text-align: center;
 }
 
-.frontPageTiitle {
+.frontPageTitle {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 200px;
   font-weight: 300;
   text-transform: uppercase;
-  /* padding: auto; sjekk om jeg kan ha det på vanlige også*/
-}
-@media (max-width: 600px) {
-  .frontPageTiitle {
-    font-size: 75px;
-  }
 }
 .frontpage-vertical-line {
   width: 1px;
@@ -53,6 +41,12 @@
   text-transform: uppercase;
 }
 @media (max-width: 600px) {
+  .frontPageImg {
+    height: 70vh;
+  }
+  .frontPageTitle {
+    font-size: 100px;
+  }
   .frontPageText {
     font-size: 24px;
     width: auto;
