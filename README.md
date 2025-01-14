@@ -20,6 +20,8 @@ To start the website simply just write either of the following:
 - npm run start
   This will start a local server that you open in you web browser.
 
+if an error occurs with the address already being in use. change the const PORT = 8080; in the server.js file, to another number.
+
 API KEYS:
 
 Google:
