@@ -39,6 +39,7 @@
   </head>
 
   <body>
+    <!-- this div was necessary because of the background colors -->
     <div class="website">
       <header class="topnav">
         <div
@@ -72,174 +73,179 @@
           <li class="checkout"><a href="#" class="menuLink">Checkout</a></li>
         </ul>
       </nav>
-
-      <section class="frontPage">
-        <img
-          class="frontPageImg"
-          src="../Images/Landing Page/resized-markus-spiske-WcLzVLbUP5g-unsplash.jpeg"
-          alt="picture of a landscape of mountains and the sky with a few clouds"
-        />
-        <div class="frontPageContent">
-          <h1 class="frontPageTitle">Fram</h1>
-          <div class="frontpage-vertical-line"></div>
-          <!-- On the picture the text is supposed to be on two lines which is why i am using a br. There is probably a better way to do this  -->
-          <h2 class="frontPageText">
-            Home delivery from <br />
-            your local farms
-          </h2>
-        </div>
-      </section>
-
-      <section class="featurePage">
-        <section class="theFeatureSections" id="produceSite">
-          <h2 class="theFeatureSectionsTitle">Shop our seasonal selection</h2>
-          <p class="theFeatureSectionInfoSnippet">Updated every week</p>
+      <main>
+        <section class="frontPage">
           <img
-            class="theFeatureImages"
-            src="../Images/Landing Page/resized-nina-luong-dp06f70Eyvc-unsplash.jpeg"
-            alt="Fresh seasonal produce in a basket"
+            class="frontPageImg"
+            src="../Images/Landing Page/resized-markus-spiske-WcLzVLbUP5g-unsplash.jpeg"
+            alt="picture of a landscape of mountains and the sky with a few clouds"
           />
-          <p class="theFeatureDescription">
-            New produce are added continously as time goes by and the seasons
-            changes
-          </p>
-          <!-- sending you to the produce page -->
-          <a href="/produce" class="theFeatureButton">
-            <button
-              class="theFeatureButton"
-              aria-label="browse our sesonal selection"
-            >
-              Browse our selection
-            </button>
-          </a>
+          <div class="frontPageContent">
+            <h1 class="frontPageTitle">Fram</h1>
+            <div class="frontpage-vertical-line"></div>
+            <!-- On the picture the text is supposed to be on two lines which is why i am using a br. There is probably a better way to do this  -->
+            <h2 class="frontPageText">
+              Home delivery from <br />
+              your local farms
+            </h2>
+          </div>
         </section>
-        <section class="theFeatureSections">
-          <h2 class="theFeatureSectionsTitle">Ask us about anything</h2>
-          <p class="theFeatureSectionInfoSnippet">
-            All your questions answered
-          </p>
-          <img
-            class="theFeatureImages"
-            src="../Images/Landing Page/resized-rebecca-ritchie-NWrp3FK68yE-unsplash.jpeg"
-            alt="a man pointing at the beautiful landscape"
-          />
-          <p class="theFeatureDescription">
-            New produce are added continously as time goes by and the seasons
-            changes
-          </p>
-          <a href="/chat">
-            <button
-              class="theFeatureButton"
-              aria-label="go to chat"
-              onclick="chatButton"
-            >
-              Go to chat
-            </button>
-          </a>
-        </section>
-      </section>
 
-      <section class="thisIsHowItWorks">
-        <h2 class="howItWorksTitle">This is how it works</h2>
-        <div class="blockContent">
-          <h3>Order groceries</h3>
-          <!-- I needed another div to get them underneath eachother-->
-          <div class="orderGroceries">
-            <p>
-              Farm is a circular service that ensures you kitchen is always
-              stocked with the essentials you need. Browse our sesonal
-              selection, choose your items, and place your online order.
+        <section class="featurePage">
+          <section class="theFeatureSections" id="produceSite">
+            <h2 class="theFeatureSectionsTitle">Shop our seasonal selection</h2>
+            <p class="theFeatureSectionInfoSnippet">Updated every week</p>
+            <img
+              class="theFeatureImages"
+              src="../Images/Landing Page/resized-nina-luong-dp06f70Eyvc-unsplash.jpeg"
+              alt="Fresh seasonal produce in a basket"
+            />
+            <p class="theFeatureDescription">
+              New produce are added continously as time goes by and the seasons
+              changes
             </p>
-            <a
-              href="produce.html"
-              class="orderGroceriesLink"
-              aria-label="see our stock off sesonal selection"
-            >
-              See our stock here
+            <!-- sending you to the produce page -->
+            <a href="/produce" class="theFeatureButton">
+              <button
+                class="theFeatureButton"
+                aria-label="browse our sesonal selection"
+              >
+                Browse our selection
+              </button>
             </a>
-          </div>
-        </div>
-        <div class="blockContent">
-          <h3>Stock up</h3>
-          <p>
-            Once you order arrives, unpack the produce and store it however it
-            works best for you. Hold on to the containers- they're yours to keep
-            until your next order.
-          </p>
-        </div>
-        <div class="blockContent">
-          <h3>Scan & reorder</h3>
-          <p>
-            Ready for a refill? Grab the container from your last order and scan
-            the QR code with our app or your phone's camera. This instantly adds
-            the items back to your cart, making reordering a breeze.
-          </p>
-        </div>
-        <div class="blockContent">
-          <h3>Swap and reuse</h3>
-          <p>
-            When we deliver your new order, simply leave your empty containers
-            outside. We'll pick them up, clean them thoroughly, and reuse them
-            for future deliveries
-          </p>
-        </div>
-      </section>
+          </section>
+          <section class="theFeatureSections">
+            <h2 class="theFeatureSectionsTitle">Ask us about anything</h2>
+            <p class="theFeatureSectionInfoSnippet">
+              All your questions answered
+            </p>
+            <img
+              class="theFeatureImages"
+              src="../Images/Landing Page/resized-rebecca-ritchie-NWrp3FK68yE-unsplash.jpeg"
+              alt="a man pointing at the beautiful landscape"
+            />
+            <p class="theFeatureDescription">
+              New produce are added continously as time goes by and the seasons
+              changes
+            </p>
+            <a href="/chat">
+              <button
+                class="theFeatureButton"
+                aria-label="go to chat"
+                onclick="chatButton"
+              >
+                Go to chat
+              </button>
+            </a>
+          </section>
+        </section>
 
-      <section class="produceSection">
-        <h2 class="produceTitle">Popular Produce</h2>
-        <div class="produceLayout">
-          <div class="produceSelection">
-            <div class="produceContainer">
-              <img
-                src="../Images/Product Page/resized-lukasz-rawa-HB_MVtHVMLc-unsplash.jpeg"
-                alt="Picture of oats"
-              />
-              <!-- They decided to remove the add to basket function from the
+        <section class="thisIsHowItWorks">
+          <h2 class="howItWorksTitle">This is how it works</h2>
+          <div class="blockContent">
+            <h3>Order groceries</h3>
+            <!-- I needed another div to get them underneath eachother-->
+            <div class="orderGroceries">
+              <p>
+                Farm is a circular service that ensures you kitchen is always
+                stocked with the essentials you need. Browse our sesonal
+                selection, choose your items, and place your online order.
+              </p>
+              <a
+                href="produce.html"
+                class="orderGroceriesLink"
+                aria-label="see our stock off sesonal selection"
+              >
+                See our stock here
+              </a>
+            </div>
+          </div>
+          <div class="blockContent">
+            <h3>Stock up</h3>
+            <p>
+              Once you order arrives, unpack the produce and store it however it
+              works best for you. Hold on to the containers- they're yours to
+              keep until your next order.
+            </p>
+          </div>
+          <div class="blockContent">
+            <h3>Scan & reorder</h3>
+            <p>
+              Ready for a refill? Grab the container from your last order and
+              scan the QR code with our app or your phone's camera. This
+              instantly adds the items back to your cart, making reordering a
+              breeze.
+            </p>
+          </div>
+          <div class="blockContent">
+            <h3>Swap and reuse</h3>
+            <p>
+              When we deliver your new order, simply leave your empty containers
+              outside. We'll pick them up, clean them thoroughly, and reuse them
+              for future deliveries
+            </p>
+          </div>
+        </section>
+
+        <section class="produceSection">
+          <h2 class="produceTitle">Popular Produce</h2>
+          <div class="produceLayout">
+            <div class="produceSelection">
+              <div class="produceContainer">
+                <img
+                  src="../Images/Product Page/resized-lukasz-rawa-HB_MVtHVMLc-unsplash.jpeg"
+                  alt="Picture of oats"
+                />
+                <!-- They decided to remove the add to basket function from the
               project, which is why this does nothing -->
-              <button class="addToBasket" onclick="">
-                Add to basket <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              </button>
+                <button class="addToBasket" onclick="">
+                  Add to basket
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="produceDiscription">
+                <p class="type">Oats</p>
+                <p class="kg">1 kg</p>
+                <p class="price">48 kr / kg</p>
+              </div>
             </div>
-            <div class="produceDiscription">
-              <p class="type">Oats</p>
-              <p class="kg">1 kg</p>
-              <p class="price">48 kr / kg</p>
+            <div class="produceSelection">
+              <div class="produceContainer">
+                <img
+                  src="../Images/Product Page/resized-goh-rhy-yan-CCxWLAx0qmk-unsplash.jpeg"
+                  alt="Picture of a pile of Red Onions"
+                />
+                <button class="addToBasket" onclick="">
+                  Add to basket
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="produceDiscription">
+                <p class="type">Red Onions</p>
+                <p class="kg">0.5 kg</p>
+                <p class="price">48 kr / kg</p>
+              </div>
+            </div>
+            <div class="produceSelection">
+              <div class="produceContainer">
+                <button class="addToBasket" onclick="">
+                  Add to basket
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </button>
+                <img
+                  src="../Images/Product Page/resized-matthew-pilachowski-w1eAFyBLhLM-unsplash.jpeg"
+                  alt="Picture of Garlic cloves"
+                />
+              </div>
+              <div class="produceDiscription">
+                <p class="type">Garlic</p>
+                <p class="kg">0.2 kg</p>
+                <p class="price">48 kr / kg</p>
+              </div>
             </div>
           </div>
-          <div class="produceSelection">
-            <div class="produceContainer">
-              <img
-                src="../Images/Product Page/resized-goh-rhy-yan-CCxWLAx0qmk-unsplash.jpeg"
-                alt="Picture of a pile of Red Onions"
-              />
-              <button class="addToBasket" onclick="">
-                Add to basket <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              </button>
-            </div>
-            <div class="produceDiscription">
-              <p class="type">Red Onions</p>
-              <p class="kg">0.5 kg</p>
-              <p class="price">48 kr / kg</p>
-            </div>
-          </div>
-          <div class="produceSelection">
-            <div class="produceContainer">
-              <button class="addToBasket" onclick="">
-                Add to basket <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              </button>
-              <img
-                src="../Images/Product Page/resized-matthew-pilachowski-w1eAFyBLhLM-unsplash.jpeg"
-                alt="Picture of Garlic cloves"
-              />
-            </div>
-            <div class="produceDiscription">
-              <p class="type">Garlic</p>
-              <p class="kg">0.2 kg</p>
-              <p class="price">48 kr / kg</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </div>
     <footer
       class="formSection"

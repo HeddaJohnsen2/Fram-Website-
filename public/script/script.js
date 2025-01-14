@@ -1,4 +1,4 @@
-//for this i used the source:
+//for this line of codes i used the source:
 // Cyberohn. (n.d.). JavaScript property: a practical example. Medium. retrived September, 2024. From:
 // https://medium.com/@cyberohn/javascript-classlist-property-a-practical-example-b129e35c8527
 
@@ -48,12 +48,14 @@ form.addEventListener("submit", (e) => {
 //retrived September, 2024. from:
 //https://developers.google.com/maps/documentation/javascript/places#placeid
 
+// this function gets the location of the map and with the use of the placeid it gets the specific details requested about the farm.
+// this function also places a marker om the main farm.
 async function initMap() {
   const position = { lat: 60.303791093376546, lng: 10.63587366028422 };
   const theMap = {
     center: position,
     zoom: 14,
-    mapId: "bd032923a2ee812f",
+    mapId: "YOUR_MAP_ID",
   };
 
   const map = new google.maps.Map(document.getElementById("map"), theMap);
@@ -90,6 +92,7 @@ async function initMap() {
   );
 }
 
+//this function adds a custominfowindow at the corner of the map
 function getDetailsDisplayed(place, status, marker, customInfoWindowJava) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     document.getElementById("placeName").innerHTML = place.name;
@@ -109,7 +112,7 @@ function getDetailsDisplayed(place, status, marker, customInfoWindowJava) {
     console.error("Error fetching the place details:", status);
   }
 }
-
+//this function adds a marker for maps in the area, when you click at the different markers you will get the title and address of the farms.
 function addMarkerPartneringFarms(results, status, map, AdvancedMarkerElement) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     results.forEach((place) => {

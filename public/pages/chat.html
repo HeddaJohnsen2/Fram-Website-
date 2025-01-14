@@ -67,59 +67,64 @@
           <li class="checkout"><a href="#" class="menuLink">Checkout</a></li>
         </ul>
       </nav>
-
-      <section
-        class="chatWithAI"
-        aria-label="This section includes a Chatbot with AI"
-      >
-        <img
-          class="backgroundChat"
-          src="../Images/Landing Page/resized-markus-spiske-WcLzVLbUP5g-unsplash.jpeg"
-          alt="picture of a landscape of mountains and the sky with a few clouds"
-        />
-        <div class="chatFrame">
-          <div class="chat">
-            <div class="chatMessages">
-              <!-- i want the screen reader to announce when there is a new message in the the list, because there is a new message everytime either the user or the chatbot write something
+      <main>
+        <section
+          class="chatWithAI"
+          aria-label="This section includes a Chatbot with AI"
+        >
+          <img
+            class="backgroundChat"
+            src="../Images/Landing Page/resized-markus-spiske-WcLzVLbUP5g-unsplash.jpeg"
+            alt="picture of a landscape of mountains and the sky with a few clouds"
+          />
+          <div class="chatFrame">
+            <div class="chat">
+              <div class="chatMessages">
+                <!-- i want the screen reader to announce when there is a new message in the the list, because there is a new message everytime either the user or the chatbot write something
               i also added aria-live="polite" because i dont want it to interupt the user when typing  -->
-              <ul id="messageList" aria-live="polite" aria-relevant="additions">
-                <li class="chatMessage">
-                  <span class="botName">Fram </span>
-                  <p>What can i help you with today?</p>
-                </li>
-              </ul>
-            </div>
-            <div id="errorHandling">
-              Failed to connect. Wait and try again later
-            </div>
-            <form
-              onsubmit="chatbot(event)"
-              id="chatForm"
-              aria-label="chat form"
-            >
-              <input
-                type="textarea"
-                id="userInputChat"
-                placeholder="type your message here"
-                aria-label="Input field for typing your message to the chatbot"
-              />
-              <button
-                id="sendButtonChat"
-                type="submit"
-                aria-label="send message"
+                <ul
+                  id="messageList"
+                  aria-live="polite"
+                  aria-relevant="additions"
+                >
+                  <li class="chatMessage">
+                    <span class="botName">Fram </span>
+                    <p>What can i help you with today?</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="errorHandling">
+                Failed to connect. Wait and try again later
+              </div>
+              <form
+                onsubmit="chatbot(event)"
+                id="chatForm"
+                aria-label="chat form"
               >
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              </button>
-              <button
-                id="sendButtonChatClose"
-                aria-label="dont write any messages untill the AI has answered your message"
-              >
-                <i class="fa fa-close" aria-hidden="true"></i>
-              </button>
-            </form>
+                <input
+                  type="textarea"
+                  id="userInputChat"
+                  placeholder="type your message here"
+                  aria-label="Input field for typing your message to the chatbot"
+                />
+                <button
+                  id="sendButtonChat"
+                  type="submit"
+                  aria-label="send message"
+                >
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </button>
+                <button
+                  id="sendButtonChatClose"
+                  aria-label="dont write any messages untill the AI has answered your message"
+                >
+                  <i class="fa fa-close" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </div>
     <script src="../script/script.js" defer></script>
     <script src="../script/chat.js" defer></script>

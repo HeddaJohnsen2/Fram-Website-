@@ -23,10 +23,17 @@ To start the website simply just write either of the following:
 API KEYS:
 
 Google:
-The project requrires a Google API key. Follow the instructions on this Website to get your key: https://developers.google.com/maps/documentation/javascript/get-api-key
+The project requrires a Google API key and mapId. Follow the instructions on this Website to get your key: https://developers.google.com/maps/documentation/javascript/get-api-key
 
 - Then place the api key in the html file "produce.html" in the script as shown below:
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places,marker" defer async></script>
+
+- and in the script.js file replace the mapId in this line of code:
+  const theMap = {
+  center: position,
+  zoom: 14,
+  mapId: "YOUR MAP ID",
+  };
 
 Open AI:
 The project also requires a Open AI key.
@@ -34,8 +41,5 @@ The project also requires a Open AI key.
 - Open the chat.js file in the project, and Replace "YOUR API KEY" with the Open AI key in the following line of code:
   Authorization: `Bearer YOUR API KEY`
 
-
-
-
-REFERENCES: 
+REFERENCES:
 Google.(n.d). Use API Keys. Retrieved: January, 2025. From: https://developers.google.com/maps/documentation/javascript/get-api-key

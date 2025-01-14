@@ -7,6 +7,9 @@
 // so instead i am using a direct API call to "https://api.openai.com/v1/chat/completions" instead.
 // This fetch request sends a POST request for chat compleitions to the OpenAI API
 
+//this function recives the messegeList from the chat.html file. it then adds a new element to the list which is the messege from the messege form in the html file
+// it then generates a messege from the system while a ... is showing. When the messege is ready it adds the new messega as the first element of the list.
+
 async function chatbot(event) {
   event.preventDefault();
   const messageDisplay = document.getElementById("messageList");
@@ -35,7 +38,7 @@ async function chatbot(event) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer YOUR API KEY`,
+        Authorization: `Bearer YOUR_API_KEY`,
       },
       body: JSON.stringify({
         model: "gpt-4",
