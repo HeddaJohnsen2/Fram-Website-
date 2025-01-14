@@ -25,8 +25,13 @@ API KEYS:
 Google:
 The project requrires a Google API key and mapId. Follow the instructions on this Website to get your key: https://developers.google.com/maps/documentation/javascript/get-api-key
 
+Go to to the Google maps platform credential page. On the credentials page, click create credentials > API key. Click close, and the new API key is listed under API keys (Google n.d).
+
 - Then place the api key in the html file "produce.html" in the script as shown below:
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places,marker" defer async></script>
+
+To get your google Map ID
+Go to google Maps platform > maps management> map IDs and click create Map ID.
 
 - and in the script.js file replace the mapId in this line of code:
   const theMap = {
